@@ -53,8 +53,7 @@ upage = 0
 
 SUP_BUTTONS = [
     [
-            Button.url("• Owner •", url="https://t.me/JuanMala_Bot"),
-        Button.url("• Channel •", url="t.me/BringBacktheoldsongs"),
+        Button.url("• Support •", url="t.me/JuanMala_Bot"),
     ],
 ]
 
@@ -63,7 +62,7 @@ SUP_BUTTONS = [
 
 @in_pattern(owner=True, func=lambda x: not x.text)
 async def inline_alive(o):
-    MSG = "• **Juan Security bot •**"
+    MSG = "• **JuanSec Userbot •**"
     WEB0 = InputWebDocument(
         "https://telegra.ph/file/0aa548fe751ac2cea67b8.jpg", 0, "image/jpg", []
     )
@@ -73,7 +72,7 @@ async def inline_alive(o):
             text=MSG,
             include_media=True,
             buttons=SUP_BUTTONS,
-            title="Juan Security bot",
+            title="JuanSec Userbot",
             description="Userbot | Telethon",
             url=TLINK,
             thumb=WEB0,
@@ -84,7 +83,7 @@ async def inline_alive(o):
         RES,
         private=True,
         cache_time=300,
-        switch_pm="👥 Juan PORTAL",
+        switch_pm="👥 JuanSec PORTAL",
         switch_pm_param="start",
     )
 
@@ -420,7 +419,7 @@ async def ibuild(e):
                     results = [
                         await builder.document(
                             _pic,
-                            title="JuanMala_Sec",
+                            title="JuanSec Op",
                             text=txt,
                             description="@JuanMala_Bot",
                             buttons=btn,
@@ -435,7 +434,7 @@ async def ibuild(e):
                     cont = InputWebDocument(pic, 0, mime_type, [])
                 results = [
                     await builder.article(
-                        title="JuanMala_Sec",
+                        title="JuanSec Op",
                         type=_type,
                         text=txt,
                         description="@JuanMala_Bot",
@@ -450,7 +449,7 @@ async def ibuild(e):
         except Exception as er:
             LOGS.exception(er)
     result = [
-        await builder.article("JuanSec", text=txt, link_preview=False, buttons=btn)
+        await builder.article("JuanSec Op", text=txt, link_preview=False, buttons=btn)
     ]
     await e.answer(result)
 

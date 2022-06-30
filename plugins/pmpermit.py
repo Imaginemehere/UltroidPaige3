@@ -786,7 +786,7 @@ async def in_pm_ans(event):
     wrns = f"{warns}/{WARNS}"
     buttons = [
         [
-            Button.url("• Dm me here •", url="https://t.me/JuanMala_bot"),
+            Button.url("• Dm me here •", url="https://t.me/JuanMala_Bot"),
         ]
     ]
     include_media = True
@@ -812,7 +812,7 @@ async def in_pm_ans(event):
                 await event.builder.document(
                     res,
                     title="Inline PmPermit",
-                    description="~ @TheUltroid",
+                    description="~ @JuanMala_Bot",
                     text=msg_,
                     buttons=buttons,
                     link_preview=False,
@@ -836,7 +836,7 @@ async def in_pm_ans(event):
                 content=cont,
             )
         ]
-    await event.answer(res, switch_pm="• JuanSecBot •", switch_pm_param="start")
+    await event.answer(res, switch_pm="• Ultroid •", switch_pm_param="start")
 
 
 @callback(re.compile("admin_only(.*)"), from_users=[ultroid_bot.uid])

@@ -95,14 +95,14 @@ buttons = [
 
 # Will move to strings
 alive_txt = """
-The Juan Security bot
+The JuanSec Userbot
 
   ◍ Version - {}
   ◍ Py-Ultroid - {}
   ◍ Telethon - {}
 """
 
-in_alive = "{}\n\n🌀 <b>Juan Security Version -><b> <code>{}</code>\n🌀 <b>PyJuanSecu -></b> <code>{}</code>\n🌀 <b>Python -></b> <code>{}</code>\n🌀 <b>Uptime -></b> <code>{}</code>\n🌀 <b>Branch -></b> [ {} ]\n\n• <b>Join @TheJuanSec</b>"
+in_alive = "{}\n\n🌀 <b>JuanSec Version -><b> <code>{}</code>\n🌀 <b>PyUltroid -></b> <code>{}</code>\n🌀 <b>Python -></b> <code>{}</code>\n🌀 <b>Uptime -></b> <code>{}</code>\n🌀 <b>Branch -></b> [ {} ]\n\n• <b>Join @JuanMala_Bot</b>"
 
 
 @callback("alive")
@@ -258,7 +258,7 @@ async def _(event):
             code=code,
             backgroundColor=choice(ATRA_COL),
         )
-        await event.reply("**Ultroid Logs.**", file=file)
+        await event.reply("**JuanSec Logs.**", file=file)
     elif opt == "open":
         file = open("ultroid.log", "r").read()[-4000:]
         return await event.eor(f"`{file}`")
