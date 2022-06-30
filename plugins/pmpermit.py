@@ -786,7 +786,7 @@ async def in_pm_ans(event):
     wrns = f"{warns}/{WARNS}"
     buttons = [
         [
-            Button.url("• Dm me here •", url="https://t.me/JuanMala_Bot"),
+            Button.url("• Dm me here •", url="https://t.me/RaeganOwly_Bot"),
         ]
     ]
     include_media = True
