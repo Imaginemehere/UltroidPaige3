@@ -10,12 +10,12 @@ import re
 from . import *
 
 STRINGS = {
-    1: """🎇 **Thanks for Deploying Juan Security bot!**
+    1: """🎇 **Thanks for Deploying JuanSec Userbot!**
 
 • Here, are the Some Basic stuff from, where you can Know, about its Usage.""",
-    2: """🎉** About JuanSecBot**
+    2: """🎉** About JuanSec**
 
-🧿 Ultroid is Pluggable and powerful Telethon Userbot, made in Python from Scratch. It is Aimed to Increase Security along with Addition of Other Useful Features.
+🧿 JuanSec is Pluggable and powerful Telethon Userbot, made in Python from Scratch. It is Aimed to Increase Security along with Addition of Other Useful Features.
 
 ❣ Made by **@JuanMala_Bot**""",
     3: """**💡• FAQs •**
@@ -38,7 +38,7 @@ STRINGS = {
   - `{HNDLR}help`
   - `{HNDLR}cmds`""",
     5: """• **For Any Other Query or Suggestion**
-  - Move to **@JuanMala_Bot**.
+  - Move to **@JuanMala_bot**.
 
 • Thanks for Reaching till END.""",
 }

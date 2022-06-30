@@ -29,7 +29,7 @@ if Owner_info_msg is None:
 
 **Message Forwards** - {udB.get_key("PMBOT")}
 
-**Juan Security Bot[version{ultroid_version}](https://github.com/TeamUltroid/Ultroid), powered by @EngrJuanMala**
+**JuanSec [v{ultroid_version}](https://github.com/HairyPotah02/UltroidLocal), powered by @JuanMala_Bot**
 """
 
 
@@ -112,7 +112,7 @@ async def ultroid(event):
             if udB.get_key("PMBOT"):
                 ok = "You can contact my master using this bot!!\n\nSend your Message, I will Deliver it To Master."
             await event.reply(
-                f"Hey there {mention}, this is EngrJuan Assistant of {me}!\n\n{ok}",
+                f"Hey there {mention}, this is JuanSec Assistant of {me}!\n\n{ok}",
                 file=udB.get_key("STARTMEDIA"),
                 buttons=[Button.inline("Info.", data="ownerinfo")]
                 if Owner_info_msg
@@ -159,7 +159,7 @@ async def ultroid(event):
 @callback("stat", owner=True)
 async def botstat(event):
     ok = len(get_all_users("BOT_USERS"))
-    msg = """EngrJuan Assistant - Stats
+    msg = """JuanSec Assistant - Stats
 Total Users - {}""".format(
         ok,
     )

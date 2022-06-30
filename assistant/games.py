@@ -147,7 +147,7 @@ async def magic(event):
     ]
     await event.reply(
         get_string("games_1"),
-        file="https://telegra.ph/file/1c51015bae5205a65fd69.jpg",
+        file="https://telegra.ph/file/0aa548fe751ac2cea67b8.jpg",
         buttons=buttons,
     )
 
